@@ -20,7 +20,7 @@ class Wizard extends Component {
   
 
   render() {
-
+    // console.log(this.props)
     let {name, wand, house, image1, image2} = this.props.wizard
     return (
         <li className={`card ${house}`}>

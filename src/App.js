@@ -37,7 +37,7 @@ class App extends Component {
       })
   }
 
-  wizardGraduates = (idOfGraduatedWizard) => {
+  graduateAWizard = (idOfGraduatedWizard) => {
     fetch(`http://localhost:4000/wizards/${idOfGraduatedWizard}`, {
       method: "DELETE"
     })
