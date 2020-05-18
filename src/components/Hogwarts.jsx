@@ -9,7 +9,9 @@ class Hogwarts extends Component {
     // console.log(this.props.wizards, "HELLO")
     return (
       <main>
-        <MaraudersMap/>
+        <MaraudersMap 
+        houseFilterTerm={this.props.houseFilterTerm}
+        handleHouseFilterTerm={this.props.handleHouseFilterTerm}/>
         <GreatHall 
         wizards={this.props.wizards}
         graduateAWizard={this.props.graduateAWizard}/>

@@ -7,8 +7,16 @@ import Hogwarts from './components/Hogwarts'
 class App extends Component {
 
   state = {
-    allWizards: []
+    allWizards: [],
+    houseFilterTerm: "All"
   }
+
+  handleHouseFilterTerm = (selectedFilter) => {
+    this.setState({
+      houseFilterTerm: selectedFilter
+    })
+  }
+  
 
   componentDidMount(){
     fetch(`http://localhost:4000/wizards`)
@@ -52,12 +60,51 @@ class App extends Component {
       })
   }
 
+  decideWhichHouseToRender = () => {
+    let {houseFilterTerm, allWizards} = this.state
+    let arrayToReturn = allWizards
+
+    if (houseFilterTerm === "All") {
+      arrayToReturn = allWizards
+    }
+
+    if (houseFilterTerm === "Gryffindor") {
+      arrayToReturn = allWizards.filter((wizard) => {
+        return wizard.house === "Gryffindor"
+    })
+    }
+
+    if (houseFilterTerm === "Hufflepuff") {
+      arrayToReturn = allWizards.filter((wizard) => {
+        return wizard.house === "Gryffindor"
+    })
+    }
+
+    if (houseFilterTerm === "Ravenclaw") {
+      arrayToReturn = allWizards.filter((wizard) => {
+        return wizard.house === "Gryffindor"
+    })
+    }
+
+    if (houseFilterTerm === "Slytherin") {
+      arrayToReturn = allWizards.filter((wizard) => {
+        return wizard.house === "Gryffindor"
+    })
+    }
+    return arrayToReturn
+  }
+  
+
   render() {
+
+    console.log(this.state)
     return (
       <div className="App">
         <Header />
         <Hogwarts 
         wizards={this.state.allWizards}
+        houseFilterTerm={this.state.houseFilterTerm}
+        handleHouseFilterTerm={this.handleHouseFilterTerm}
         enrollNewWizard={this.enrollNewWizard}
         graduateAWizard={this.graduateAWizard}/>
       </div>
