@@ -5,7 +5,7 @@ class SortingHat extends Component {
   state = {
     name: "",
     wand: "",
-    house: "",
+    house: "Gryffindor",
     image1: "",
     image2: ""
   }

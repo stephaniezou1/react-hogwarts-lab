@@ -76,19 +76,19 @@ class App extends Component {
 
     if (houseFilterTerm === "Hufflepuff") {
       arrayToReturn = allWizards.filter((wizard) => {
-        return wizard.house === "Gryffindor"
+        return wizard.house === "Hufflepuff"
     })
     }
 
     if (houseFilterTerm === "Ravenclaw") {
       arrayToReturn = allWizards.filter((wizard) => {
-        return wizard.house === "Gryffindor"
+        return wizard.house === "Ravenclaw"
     })
     }
 
     if (houseFilterTerm === "Slytherin") {
       arrayToReturn = allWizards.filter((wizard) => {
-        return wizard.house === "Gryffindor"
+        return wizard.house === "Slytherin"
     })
     }
     return arrayToReturn
@@ -98,15 +98,20 @@ class App extends Component {
   render() {
 
     console.log(this.state)
+    let displayedWizards = this.decideWhichHouseToRender()
     return (
       <div className="App">
         <Header />
         <Hogwarts 
-        wizards={this.state.allWizards}
+        
         houseFilterTerm={this.state.houseFilterTerm}
+        wizards={displayedWizards}
         handleHouseFilterTerm={this.handleHouseFilterTerm}
+        
         enrollNewWizard={this.enrollNewWizard}
-        graduateAWizard={this.graduateAWizard}/>
+        graduateAWizard={this.graduateAWizard}
+        
+        />
       </div>
     );
   }
