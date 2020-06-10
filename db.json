@@ -6,7 +6,7 @@
       "wand": "Phoenix Feather",
       "house": "Gryffindor",
       "image1": "http://www.univers-series.com/wp-content/uploads/2016/02/harrypotter.jpeg",
-      "image2": "https://timedotcom.files.wordpress.com/2014/07/301386_full1.jpg"
+      "image2": "https://img1.looper.com/img/uploads/2019/02/harry-potter.jpg"
     },
     {
       "id": 2,
@@ -29,7 +29,7 @@
       "name": "Draco Malfoy",
       "wand": "Unicorn Tail Hair",
       "house": "Slytherin",
-      "image1": "https://cdn.movieweb.com/img.news.tops/NEh934QRmEyekk_2_b/Tom-Felton-Draco-Malfoy-No-More-Harry-Potter.jpg",
+      "image1": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/23/09/malfoy.0.0.jpg?w968h681",
       "image2": "https://qph.fs.quoracdn.net/main-qimg-0f9603b2605dce5b8dfb6d27028b02ab"
     },
     {
@@ -46,7 +46,15 @@
       "wand": "Dragon Heartstring",
       "house": "Gryffindor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
-      "image2": "https://imgix.bustle.com/rehost/2016/9/13/4685a819-e442-4e36-af5b-9c8c42bfbf00.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70"
+      "image2": "https://img1.looper.com/img/gallery/professor-mcgonagalls-entire-backstory-explained/intro-1582830670.jpg"
+    },
+    {
+      "name": "Tyler Olson",
+      "wand": "Elder Wand",
+      "house": "Gryffindor",
+      "image1": "https://wallpapersite.com/images/pages/pic_w/8936.jpg",
+      "image2": "https://wallpapersite.com/images/pages/pic_w/8936.jpg",
+      "id": 7
     }
   ]
 }

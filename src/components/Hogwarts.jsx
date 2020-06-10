@@ -6,11 +6,17 @@ import MaraudersMap from './MaraudersMap'
 class Hogwarts extends Component {
 
   render() {
+    // console.log(this.props.wizards, "HELLO")
     return (
       <main>
-        <MaraudersMap/>
-        <GreatHall/>
-        <SortingHat/>
+        <MaraudersMap 
+        houseFilterTerm={this.props.houseFilterTerm}
+        handleHouseFilterTerm={this.props.handleHouseFilterTerm}/>
+        <GreatHall 
+        wizards={this.props.wizards}
+        graduateAWizard={this.props.graduateAWizard}/>
+        <SortingHat 
+        enrollNewWizard={this.props.enrollNewWizard}/>
       </main>
     )
   }
